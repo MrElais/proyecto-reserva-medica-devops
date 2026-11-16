@@ -1,0 +1,19 @@
+# Variables de entorno reales
+.env
+.env.*
+
+# Se permite el archivo de ejemplo
+!.env.example
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Configuración local de editores
+.vscode/
+.idea/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
