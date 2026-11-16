@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de reserva de horas médicas">
+    <title>Reserva de Horas Médicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Centro Médico Vida Salud</h1>
+        <p>Reserva tu hora médica de manera sencilla</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="formulario">
+            <h2>Reserva de hora médica</h2>
+            <p class="descripcion">
+                Completa los siguientes datos para solicitar una hora.
+            </p>
+
+            <form>
+                <label for="nombre">Nombre del paciente</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Ingresa tu nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo"
+                       placeholder="ejemplo@correo.cl" required>
+
+                <label for="especialidad">Especialidad médica</label>
+                <select id="especialidad" name="especialidad" required>
+                    <option value="">Selecciona una especialidad</option>
+                    <option value="medicina-general">Medicina general</option>
+                    <option value="pediatria">Pediatría</option>
+                    <option value="cardiologia">Cardiología</option>
+                    <option value="dermatologia">Dermatología</option>
+                    <option value="odontologia">Odontología</option>
+                </select>
+
+                <label for="fecha">Fecha de atención</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de atención</label>
+                <select id="hora" name="hora" required>
+                    <option value="">Selecciona un horario</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+
+                <button type="submit">Solicitar reserva</button>
+            </form>
+
+            <p class="aviso">
+                Proyecto académico: formulario demostrativo.
+                No ingreses información personal real.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Centro Médico Vida Salud - Proyecto académico DevOps</p>
+    </footer>
+
+</body>
+</html>
